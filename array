@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int a[10][10],i,j,row,cols;
+	printf("enter number of row");
+	scanf("%d",&row);
+	printf("enter numbers of cols");
+	scanf("%d",&cols);
+	printf("enter array elements");
+	for(i=0;i<row;i++)
+	{
+		for(j=0;j<cols;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("array element are: \n");
+	for(i=0;i<row;i++)
+	{
+		for(j=0;j<cols;j++)
+		{
+			printf("%d\t",a[i][j]);
+		}
+		printf("\n");
+	}
+}
